@@ -14,34 +14,36 @@
     <h1 class="jumbotron text-center">Akan-Name Birthday Calculator.</h1>
     <div class="intro">
       <h3>Where it all strated</h3>
-      <p>Naming in Ghana is symbolic.Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.</p>
+      <p>Naming in Ghana is symbolic.Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.This application requires your birthday details to calculate the day of the week you were born and then depending on your gender outputs your Akan Name. </p>
     </div>
 
 
 
-
-
-
-
     <p>Please input your details below as instructed: </p>
-    <section class=" container birthday-cal"><form>
-      <div>
-        <label for="formGroupExampleInput">Year of Birth</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter year of birth">
+    <section class=" container">
+      <form>
+      <div class="input-group">
+        <label>Year of Birth</label>
+        <input type="text" placeholder="Enter year of birth" id="birth-year" onclick="validateYear">
+        <span id="year-error"></span>
       </div>
-      <div>
-        <label for="formGroupExampleInput2">Month of Birth</label>
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter month of birth">
+      <div class="input-group">
+        <label>Month of Birth</label>
+        <input type="text" placeholder="Enter month of birth">
+        <span id="month-error"></span>
       </div>
-      <div>
-        <label for="formGroupExampleInput2">Day</label>
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter day of month">
+      <div class="input-group">
+        <label>Day</label>
+        <input type="text" placeholder="Enter day of month">
+        <span id="day-error"></span>
       </div>
-      <div>
-        <label for="formGroupExampleInput2">Gender</label>
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter gender">
+      <div class="input-group">
+        <label for="input-group">Gender</label>
+        <input type="text" placeholder="Enter gender">
+        <span id="gender-error"></span>
       </div>
       <button type="submit" class="btn btn-primary mt-3">Submit</button>
+      <span id="submit-error"></span>
     </form>
   </section>
     
