@@ -27,3 +27,7 @@ function validateYear(year) {
       return true;
   }
 }
+
+function validateMonth(month) {
+  
+}

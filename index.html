@@ -23,24 +23,28 @@
     <section class=" container">
       <form>
       <div class="input-group">
-        <label>Year of Birth</label>
+        <label>Year of Birth: </label>
         <input type="text" placeholder="Enter year of birth" id="birth-year" onclick="validateYear">
         <span id="year-error"></span>
       </div>
       <div class="input-group">
-        <label>Month of Birth</label>
-        <input type="text" placeholder="Enter month of birth">
+        <label>Month of Birth: </label>
+        <input type="text" placeholder="Enter month of birth" id="month" onclick="validateMonth">
         <span id="month-error"></span>
       </div>
       <div class="input-group">
-        <label>Day</label>
-        <input type="text" placeholder="Enter day of month">
+        <label>Day: </label>
+        <input type="text" placeholder="Enter day of month" id="date" onclick="validateDay">
         <span id="day-error"></span>
       </div>
       <div class="input-group">
-        <label for="input-group">Gender</label>
-        <input type="text" placeholder="Enter gender">
+        <label for="input-group">Gender: </label>
+        <input type="text" placeholder="Enter gender" id="gender" onclick="validateGender">
         <span id="gender-error"></span>
+      </div>
+      <div class="input-group">
+        <label for="input-group">Akan Name: </label>
+        <input type="text" placeholder="Akan Name">
       </div>
       <button type="submit" class="btn btn-primary mt-3">Submit</button>
       <span id="submit-error"></span>
