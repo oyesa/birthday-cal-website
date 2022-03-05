@@ -1,6 +1,12 @@
-#
+# Akan Project
+#### By Oyesa Oluchina  ,06/03/2022
+This is a website application which calculates the day a user was born using his/her birthday credentials. Then depending on the day they were born and their gender, it assigns the user their Akan Name.
 
-#### By Oyesa Oluchina  ,23/02/2022
+Behaviour Driven Development (BDD)
+Behaviour: 
+Input:User inputs the required details
+Output: Akan name displayed
+
 ### Setup/installation Requirements
  * You need to have VS code installed
  * An Access to Internet
