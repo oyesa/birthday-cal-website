@@ -8,17 +8,19 @@ Input:User inputs the required details
 Output: Akan name displayed
 
 ### Setup/installation Requirements
- * You need to have VS code installed
- * An Access to Internet
- * A Web Browser
- 1.Clone the Repository
- git clone htpps//:github.com/SharonneKemboi/README-practice.git
+ * Access your Github account
+ * Fork the repo from https://github.com/oyesa/birthday-cal-website.git
+ * Clone the link
+ * Open the link 
+ 
  ### Technology
- - HTML
- - CSS
- - Javascript
+ - HTML - Used for building UI
+ - CSS -Used to style UI
+ - Javascript - Used for document object manipulation
+ - Bootstrap - Used for styling the interface
  ### Bugs
- <p>Seen any bug? Contact me ASAP!!</p>
+ Seen any bug? Contact me via mercy.oluchina@student.moringaschool.com
+ 
  ### Licence
  MIT Licence
 ## Authors Info
