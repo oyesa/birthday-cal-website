@@ -1,8 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
 body {
-  background-image: url(images/solid-brown-door-background.jpg);
+  background-image: url(images/fabric-background.jpg);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+}
+.container{
+  width: 100%;
+  height: 50vh;
+  background: #141a34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container form {
+  width: 90%;
+  max-width: 500px;
+  padding: 50px 30px 20px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.input-group{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  position: relative;
 }
