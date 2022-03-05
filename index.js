@@ -4,6 +4,7 @@ var dayError = document.getElementById('day-error')
 var genderError = document.getElementById('gender-error')
 var submitError = document.getElementById('submit-error')
 
+//add function to validate year value and its correct fomart
 
 function validateYear(year) {
   var text = /^[0-9]+$/;
@@ -28,6 +29,8 @@ function validateYear(year) {
   }
 }
 
+//add function for month validation 
+
 function validateMonth(month) {
   var month = document.getElementById('month').value;
 
@@ -35,11 +38,14 @@ function validateMonth(month) {
       monthError.innerHTML = 'month invalid'
       return false;
   }
-  if(!month.match(/^[1-12]$/)) {
+  if((month < 0) || (month > 12)) {
       monthError = 'month value invalid'
       return false;
   }
+  return true:
 }
+
+//add day function and validation
 
 function validateDay(day) {
     var day = document.getElementById('day').value;
@@ -48,8 +54,28 @@ function validateDay(day) {
         dayError.innerHTML = 'day invalid'
         return false;
     }
-    if(!day.match(/^[0-31]$/)) {
+    if((day < 0) || (day > 31)) {
         dayError = 'day value invalid'
         return false;
     }
+    return true;
 }
+
+//add gender options and birth date calculations based on gender that returns Akan name
+
+function validateGender(gender){
+    var gender = document.getElementById('gender').value;
+
+    if
+}
+
+
+
+
+
+
+
+
+
+
+
