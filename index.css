@@ -1,8 +1,8 @@
 body {
-  background-image: url(images/african\ woman\ and\ children.jpg);
+  background-image: url(images/solid-brown-door-background.jpg);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 100%;
+  color: white;
 }
