@@ -1,25 +1,17 @@
 var yearError = document.getElementById('year-error')
 var monthError = document.getElementById('month-error')
 var dayError = document.getElementById('day-error')
-var genderError = document.getElementById('gender-error')
 var submitError = document.getElementById('submit-error')
 
-//add function to validate year value and its correct fomart
+//add year validation
 
 function validateYear(year) {
-  var text = /^[0-9]+$/;
-  if (year != 0) {
-      if ((year != "") && (!text.test(year))) {
-
-          alert("Please Enter Numeric Values Only");
-          return false;
-      }
-
+  var year = document.getElementById('year').value;
+  var year = /^[0-9]+$/;
       if (year.length != 4) {
           alert("Year invalid. Please check");
           return false;
       }
-      var current_year=new Date().getFullYear();
       if((year < 1920) || (year > current_year))
           {
           alert("Year should be in range 1920 to current year");
@@ -29,7 +21,7 @@ function validateYear(year) {
   }
 }
 
-//add function for month validation 
+//add month validation 
 
 function validateMonth(month) {
   var month = document.getElementById('month').value;
@@ -45,7 +37,7 @@ function validateMonth(month) {
   return true;
 }
 
-//add day function and validation
+//add day validation
 
 function validateDay(day) {
     var day = document.getElementById('day').value;
@@ -61,18 +53,41 @@ function validateDay(day) {
     return true;
 }
 
-//add gender options and birth date calculations based on gender that returns Akan name
+//Day of week calculations 
 
-function validateGender(gender){
-    var gender = document.getElementById('gender').value;
+var weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+var maleName = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame']
+var femaleName = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
 
-    if(gender == male){
-        return 'Your Akan name is '
+var year = document.getElementById('year').value;
+var month = document.getElementById('month').value;
+var day = document.getElementById('day').value;
+var century = parseInt(year/100);
+
+var d = 0; //day of week 
+d += parseInt(day);
+d += parseInt((13/5) * month - 0.2);
+d += parseInt(year);
+d += parseInt(year/4);
+d += parseInt(century/4);
+d -= parseInt(2 * century);
+d %=7;
+
+//Factor in Akan name based on gender
+
+if(valid) {
+    if (gender[i].value == 'Male') {
+        display.innerHTML = "You were born on a "+day+" <br> "+"Your Akan name is" + maleName[d];
+    }
+    else {
+        if (gender[i].value == 'Female') {
+            display.innerHTML = "You were born on a "+day+" <br> "+"Your Akan name is" + femaleName[d];  
     }
 }
-
-
-
+else {
+    genderError.innerHTML = "select gender";
+    return false;
+}
 
 
 
