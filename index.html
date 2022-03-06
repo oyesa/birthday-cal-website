@@ -18,9 +18,10 @@
       <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.<br> This application requires your birthday details to calculate the day of the week you were born and then, depending on your gender outputs your Akan Name. </p>
     </div>
 
-    <section class=" container">
-      <form name="Akan-name" onsubmit="return false">
+    <section class="container">
+      <form name="AkanForm" onsubmit="return false">
         <div class="dates">
+          <p>Please input your details below as instructed:</p>
           <ul>
             <li>
               <label for="">Enter date of birth</label>
@@ -31,18 +32,27 @@
             <li><div class="errormessage" id="mydateerror"></div></li>
           </ul>
         </div>
-        <div class="gender">
+        <select name="" id="gender">
+          <option value="select">Select</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <!-- <div class="gender">
           <ul>
             <li><label for="">Select Gender</label></li>
             <li>
               <input type="radio" name="gender" value="Female" class="radio" id="Female">
+              <label for="Female">Female</label>
               <input type="radio" name="gender" value="Male" class="radio" id="Male">
+              <label for="Male">Male</label>
             </li>
             <li><div class="errormessage" id="gendererror"></div></li>
           </ul>
-        </div>
-        <input type="submit" name="submit" class="button" value="Generate" onclick="validate()">
-        <input type="reset" onclick="refresh(); return false;" class="button" value="Refresh">
+        </div> -->
+        <!-- <input type="submit" name="submit" class="button" value="Generate" onclick="validate()"> -->
+        <button type="submit" id="submit">Generate</button>
+        <p class="return"></p>
+        <!-- <input type="reset" onclick="refresh(); return false;" class="button" value="Refresh"> -->
     </form>
     <hr>
     <div class="display" id="display"></div>
