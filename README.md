@@ -1,11 +1,13 @@
 # Akan Project
 #### By Oyesa Oluchina  ,06/03/2022
-This is a website application which calculates the day a user was born using his/her birthday credentials. Then depending on the day they were born and their gender, it assigns the user their Akan Name.
 
-Behaviour Driven Development (BDD)
-Behaviour: 
+### Description
+This is a website application which calculates the day a user was born using his/her birthday credentials. Using the credentials, the application then computes and displays the user's Akan Name depending on the day they were born and their gender.
+
+### Behaviour Driven Development (BDD)
+Behaviour: Dialog box opens
 Input:User inputs the required details
-Output: Akan name displayed
+Output: User's Akan Name displayed
 
 ### Setup/installation Requirements
  * Access your Github account
@@ -19,7 +21,10 @@ Output: Akan name displayed
  - Javascript - Used for document object manipulation
  - Bootstrap - Used for styling the interface
  ### Bugs
- Seen any bug? Contact me via mercy.oluchina@student.moringaschool.com
+ In case of any bug please alert me.
+
+### Contact
+Oyesa Oluchina -mercy.oluchina@student.moringaschool.com
 
  ### Licence
  MIT Licence
