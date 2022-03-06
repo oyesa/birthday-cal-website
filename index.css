@@ -67,3 +67,8 @@ body {
 ::placeholder{
   font-size: 14px;
 }
+.button p {
+  width: 200px;
+  margin: 0 auto;
+  display: inline;
+}

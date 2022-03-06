@@ -15,7 +15,7 @@
     <h1 class="jumbotron text-center">Akan-Name Birthday Calculator.</h1>
     <div class="intro">
       <h3>Naming Culture in Akan</h3>
-      <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.<br> This application requires your birthday details to calculate the day of the week you were born and then depending on your gender outputs your Akan Name. </p>
+      <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.<br> This application requires your birthday details to calculate the day of the week you were born and then, depending on your gender outputs your Akan Name. </p>
     </div>
 
     <section class=" container">
@@ -36,11 +36,13 @@
         <input type="text" placeholder="Enter day of month" id="date" onclick="validateDay">
         <span id="day-error"></span>
       </div>
-      <div class="input-group">
-        <label for="input-group">Gender: </label>
-        <input type="text" placeholder="Enter gender" id="gender" onclick="validateGender">
-        <span id="gender-error"></span>
+     
+      <div class="button">
+        <h6>Gender</h6>
+        <p><input type="button" value="Male"  onclick="compute(this.form)"></p>
+        <p><input type="button"  value="Female"  onclick="compute(this.form)"></p>
       </div>
+
       <div class="input-group">
         <label for="input-group">Akan Name: </label>
         <input type="text" placeholder="Akan Name">
