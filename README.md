@@ -20,8 +20,8 @@ Output: Akan name displayed
  - Bootstrap - Used for styling the interface
  ### Bugs
  Seen any bug? Contact me via mercy.oluchina@student.moringaschool.com
- 
+
  ### Licence
  MIT Licence
 ## Authors Info
-- LinkedIn -[Oyesa Oluchina](url)
+- LinkedIn -[Oyesa Oluchina]

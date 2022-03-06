@@ -42,7 +42,7 @@ function validateMonth(month) {
       monthError = 'month value invalid'
       return false;
   }
-  return true:
+  return true;
 }
 
 //add day function and validation
@@ -51,7 +51,7 @@ function validateDay(day) {
     var day = document.getElementById('day').value;
 
     if(day.length == 0) {
-        dayError.innerHTML = 'day invalid'
+        dayError.innerHTML = 'day value invalid'
         return false;
     }
     if((day < 0) || (day > 31)) {
@@ -66,7 +66,9 @@ function validateDay(day) {
 function validateGender(gender){
     var gender = document.getElementById('gender').value;
 
-    if
+    if(gender == male){
+        return 'Your Akan name is '
+    }
 }
 
 
