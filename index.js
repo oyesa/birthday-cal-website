@@ -64,24 +64,27 @@ var month = document.getElementById('month').value;
 var day = document.getElementById('day').value;
 var century = parseInt(year/100);
 
-var d = 0; //day of week 
-d += parseInt(day);
-d += parseInt((13/5) * month - 0.2);
-d += parseInt(year);
-d += parseInt(year/4);
-d += parseInt(century/4);
-d -= parseInt(2 * century);
-d %=7;
+//day of week 
+
+var dayOfWeek = ((century/4)-2*century-1)+(5*year/4)+(26*(month+1)/10+day)%7;
+return dayOfWeek;
 
 //Factor in Akan name based on gender
 
+for(var i = 0;i<gender.length;i++){
+    if(gender[i].checked){
+        valid = true;
+        break;
+    }
+}
+
 if(valid) {
     if (gender[i].value == 'Male') {
-        display.innerHTML = "You were born on a "+day+" <br> "+"Your Akan name is" + maleName[d];
+        display.innerHTML = "You were born on a "+day+" <br> "+"Your Akan name is" + maleName[dayOfWeek];
     }
     else {
         if (gender[i].value == 'Female') {
-            display.innerHTML = "You were born on a "+day+" <br> "+"Your Akan name is" + femaleName[d];  
+            display.innerHTML = "You were born on a "+day+" <br> "+"Your Akan name is" + femaleName[dayOfWeek];  
     }
 }
 else {
