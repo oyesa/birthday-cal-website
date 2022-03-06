@@ -19,33 +19,30 @@
     </div>
 
     <section class=" container">
-      <form>
-        <p> Please input your details below as instructed: </p>
-      <div class="input-group">
-        <label>Year of Birth: </label>
-        <input type="text" placeholder="Enter year of birth" id="year" onclick="validateYear">
-        <span id="year-error"></span>
-      </div>
-      <div class="input-group">
-        <label>Month: </label>
-        <input type="text" placeholder="Enter month of birth" id="month" onclick="validateMonth">
-        <span id="month-error"></span>
-      </div>
-      <div class="input-group">
-        <label>Day: </label>
-        <input type="text" placeholder="Enter day of month" id="date" onclick="validateDay">
-        <span id="day-error"></span>
-      </div>
-     
-      <div class="button">
-        <h6>Gender</h6>
-        <p><input type="radio" id="Male" name="gender" value="Male" onclick="compute(this.form)"></p>
-        <label for="Male">Male</label>
-        <p><input type="radio" id="Female" name="gender" value="Female" onclick="compute(this.form)"></p>
-        <label for="Female">Female</label>
-      </div>
-      <input type="submit" name="submit" class="button" value="Generate" onclick="validate()">
-      <input type="reset" onclick="refresh(); return false;" class="button" value="Refresh">
+      <form name="Akan-name" onsubmit="return false">
+        <div class="dates">
+          <ul>
+            <li>
+              <label for="">Enter date of birth</label>
+            </li>
+            <li>
+              <input type="date" class="dateofbirth" name="mydate" id="mydate">
+            </li>
+            <li><div class="errormessage" id="mydateerror"></div></li>
+          </ul>
+        </div>
+        <div class="gender">
+          <ul>
+            <li><label for="">Select Gender</label></li>
+            <li>
+              <input type="radio" name="gender" value="Female" class="radio" id="Female">
+              <input type="radio" name="gender" value="Male" class="radio" id="Male">
+            </li>
+            <li><div class="errormessage" id="gendererror"></div></li>
+          </ul>
+        </div>
+        <input type="submit" name="submit" class="button" value="Generate" onclick="validate()">
+        <input type="reset" onclick="refresh(); return false;" class="button" value="Refresh">
     </form>
     <hr>
     <div class="display" id="display"></div>
