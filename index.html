@@ -27,7 +27,7 @@
         <span id="year-error"></span>
       </div>
       <div class="input-group">
-        <label>Month of Birth: </label>
+        <label>Month: </label>
         <input type="text" placeholder="Enter month of birth" id="month" onclick="validateMonth">
         <span id="month-error"></span>
       </div>
@@ -39,17 +39,16 @@
      
       <div class="button">
         <h6>Gender</h6>
-        <p><input type="button" value="Male"  onclick="compute(this.form)"></p>
-        <p><input type="button"  value="Female"  onclick="compute(this.form)"></p>
+        <p><input type="radio" id="Male" name="gender" value="Male" onclick="compute(this.form)"></p>
+        <label for="Male">Male</label>
+        <p><input type="radio" id="Female" name="gender" value="Female" onclick="compute(this.form)"></p>
+        <label for="Female">Female</label>
       </div>
-
-      <div class="input-group">
-        <label for="input-group">Akan Name: </label>
-        <input type="text" placeholder="Akan Name">
-      </div>
-      <button type="submit" class="btn btn-primary mt-3">Submit</button>
-      <span id="submit-error"></span>
+      <input type="submit" name="submit" class="button" value="generate" onclick="validate()">
+      <input type="reset" onclick="refresh(); return false;" class="button" value="refresh">
     </form>
+    <hr>
+    <div class="display" id="display"></div>
   </section>
     
       
